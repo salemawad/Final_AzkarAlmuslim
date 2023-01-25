@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+
+    <uses-permission android:name="android.permission.INTERNETr" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/asset"
+        android:label="اذكار المسلم"
+        android:roundIcon="@drawable/asset"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp">
+        <activity android:name=".page5"></activity>
+        <activity android:name=".page4" />
+        <activity android:name=".page3" />
+        <activity android:name=".homepage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

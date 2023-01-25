@@ -1,0 +1,29 @@
+<Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+ aSwitch=findViewById(R.id.switch1);
+        aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked==true){
+                    Intent intent=new Intent(homepage.this,page5.class);
+                    startActivity(intent);
+
+                }
+            }
+        });
+
+
+*-----------------------------------------------
+radioButton=findViewById(R.id.radiobut);
+      //  radioButton.setOnClickListener(new View.OnClickListener() {
+       //     @Override
+       //     public void onClick(View v) {
+       //         Intent intent=new Intent(homepage.this,page5.class);
+       //         startActivity(intent);
+      //      }
+     //   });
